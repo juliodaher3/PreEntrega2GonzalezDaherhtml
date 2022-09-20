@@ -42,7 +42,9 @@ a {
 
 }
 
-
+.header ul{
+    
+}
 
 .header__nav ul {
     display: flex;
@@ -84,7 +86,7 @@ a {
 /* --- HERO SECTION --- */
 
 .hero {
-    height: 600px;
+    height: 800px;
     background-image: url(../assets/grano_cafe.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -96,8 +98,18 @@ a {
 
 .hero__text {
     text-align: center;
+    background-color: rgba(218, 165, 32, 0.296);
+    padding: 40px;
+    border-radius: 100px;
+}
 
+.hero__text h2{
+    color: black ;
+}
 
+.hero__text h3{
+    color: #694f3d ;
+    
 }
 
 .hero__text h2 {
@@ -117,7 +129,7 @@ a {
 
 /* --- PRESENTACION --- */
 
-.presentacion {
+/* .presentacion {
     background-color: burlywood;
     width: 100%;
     height: 700px;
@@ -143,7 +155,7 @@ a {
     /* background-color: aqua; */
 }
 
-.imagen_cafeteria {
+/* .imagen_cafeteria {
     width: 600px;
     height: 400px;
     display: flex;
@@ -154,7 +166,7 @@ a {
 .articulo_cafeteria {
     display: flex;
     flex-direction: column;
-}
+} */
 
 
 
@@ -165,44 +177,66 @@ a {
 
 /* --- SEPARADOR ELEGIRNOS --- */
 
-.elegirnos {
-    background-color: beige;
-    width: 100%;
-    height: 400px;
-}
 
-.elegirnos__titulo {
-    text-align: center;
-    padding-top: 40px;
-}
 
-.elegirnos__contenedor {
-    border: black 2px;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
-
-.elegirnos_contenedor {
-    display: flex;
-    margin-top: 60px;
-    justify-content: space-around
-}
 
 
 
 .elegirnos__imagen {
     width: 100px;
     height: 100px;
+} 
+
+.elegirnos__titulo{
+    /* background-color: #694f3dc1; */
+    background-color: rgba(218, 165, 32, 0.296);
+    color: #694f3d;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.elegirnos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+}
+
+.tarjeta {
+    width: 200px;
+    height: 300 px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 17px;
+    
+    
+
+    border: 2px solid black;
+}
+
+.elegirnos__contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 
-/* --- SEPARADOR FOOTER --- */
+.elegirnos__imagen{
+    width: 100px;
+    height: 100px;
+}
 
+
+
+
+
+
+
+
+/* --- FIN SEPARADOR ELEGIRNOS --- */
 
 .footer_contenedor {
     background-color: goldenrod;
