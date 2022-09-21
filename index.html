@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>The Coffee Shop</title>
 </head>
@@ -17,11 +18,12 @@
     <header class="header">
 
         <div class="header__logo">
-            <img src="./assets/coffee-shop.png" alt="Logo de The Coffee Shop">
+            <a href="./index.html"> <img src="./assets/coffee-shop.png" alt="Logo de The Coffee Shop"></a>
 
-            <h1 class="header__title"> THE COFFEE SHOP </h1>
+            <h1 class="header__title"> <a href="./index.html"> THE COFFEE SHOP </a> </h1>
 
         </div>
+
         <nav class="header__nav">
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
@@ -65,7 +67,7 @@
 
             <div class="elegirnos__contenedor">
 
-                <article class="tarjeta">
+                <article class="tarjeta" data-aos="zoom-in">
 
 
                     <img class="elegirnos__imagen" src="./assets/taza-de-cafe.png" alt="">
@@ -78,7 +80,7 @@
 
                 </article>
 
-                <article class="tarjeta">
+                <article class="tarjeta" data-aos="zoom-in">
 
 
                     <img class="elegirnos__imagen" src="./assets/cookie.png" alt="">
@@ -93,7 +95,7 @@
 
 
 
-                <article class="tarjeta">
+                <article class="tarjeta" data-aos="zoom-in">
 
                     <img class="elegirnos__imagen" src="./assets/paquete-de-cafe.png" alt="">
 
@@ -105,7 +107,7 @@
 
                 </article>
 
-                <article class="tarjeta">
+                <article class="tarjeta" data-aos="zoom-in">
 
                     <img class="elegirnos__imagen" src="./assets/corazon.png" alt="">
 
@@ -140,39 +142,43 @@
 
 
 
-            <div>
-                <img class="footer__logo" src="./assets/coffee-shop.png" alt="Logo de The Coffee House">
-            </div>
+        <div>
+            <img class="footer__logo" src="./assets/coffee-shop.png" alt="Logo de The Coffee House">
+        </div>
 
-            <div class="footer__info">
+        <div class="footer__info">
 
-                <h4>Lorem</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum deserunt eum delectus</p>
-            </div>
+            <h4>Lorem</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum deserunt eum delectus</p>
+        </div>
 
-            <div class="footer__contact__info">
-                <h4>Info de Contacto</h4>
-                <ul>
-                    <li>Mail: info@randomcafe.com.ar </li>
-                    <li>Tel: 4520-5648</li>
-                    <li>Sarmiento 700, Balvanera, CABA</li>
-                    <li><a href="./pages/contacto.html" class="footer__boton__form"> Formulario de Contacto </a></li>
-                </ul>
-            </div>
+        <div class="footer__contact__info">
+            <h4>Info de Contacto</h4>
+            <br>
+            <ul>
+                <li>Mail: info@randomcafe.com.ar </li>
+                <li>Tel: 4520-5648</li>
+                <li>Sarmiento 700, Balvanera, CABA</li>
+                <li><a href="./pages/contacto.html" class="footer__boton__form"> Formulario de Contacto </a></li>
+            </ul>
+        </div>
 
 
-            <div>
-                <iframe class="footer__maps"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.3145784760914!2d-58.47828238439756!3d-34.545589680474734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb697e8e4140f%3A0xb6fd5e70a77da8e4!2sPlus%20Ultra%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661818295895!5m2!1ses-419!2sar"
-                    width="300px" height="200px" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        <div>
+            <iframe class="footer__maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.3145784760914!2d-58.47828238439756!3d-34.545589680474734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb697e8e4140f%3A0xb6fd5e70a77da8e4!2sPlus%20Ultra%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661818295895!5m2!1ses-419!2sar"
+                width="300px" height="200px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
 
 
     </footer>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
