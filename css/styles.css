@@ -168,7 +168,7 @@ a {
 
 .hero__text {
     text-align: center;
-    
+
     background-color: rgba(218, 165, 32, 0.296);
     /* padding: 20px; */
     /* border-radius: 20px; */
@@ -293,18 +293,18 @@ a {
 } */
 
 .footer {
-    
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: space-between 5px;
-   background: rgb(255, 255, 255);
-   background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 10%, rgb(220, 183, 104) 100%);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 10%, rgb(220, 183, 104) 100%);
 
 }
 
 
-.footer div{
+.footer div {
     width: 175px;
     height: 200px;
     /* border: black solid 2px; */
@@ -316,13 +316,13 @@ a {
 }
 
 .footer__contact__info {
-    
+
     text-align: left;
 }
 
 .footer__info {
     text-align: left;
-    
+
 }
 
 .footer__info h4 {
@@ -334,6 +334,7 @@ a {
     padding: 10px;
     text-align: center;
 }
+
 .footer__maps {
     overflow: auto;
     overflow-y: auto;
@@ -351,6 +352,7 @@ a {
 
 .footer__boton__form {
     color: #694f3d;
+    
     font-weight: bold;
     text-decoration: underline;
     transition-property: all;
@@ -409,7 +411,7 @@ a {
 .redes__contenedor {
     display: flex;
     flex-direction: column;
-
+    /* border: violet 5px solid; */
 
     justify-content: center;
     align-items: center;
@@ -418,12 +420,54 @@ a {
     gap: 40px;
 }
 
-.redes__img {
-    width: 300px;
-    border-radius: 15px;
+.redes__tarjeta{
+    /* border: blue solid 3px; */
+    display: flex;
+    flex-direction: column;
+
     box-shadow: 0 0 10px;
+    border-radius: 15px;
+    
+    width: 200px;
+    /* height: 300px; */
+
 
 }
+
+.redes__img {
+    
+    border-radius: 15px;
+    width: 100%;
+
+}
+
+.redes__boton{
+    
+    padding: 13px 8px;
+    /* border: 2px solid black; */
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+    font-weight: 600;
+
+    
+    
+    
+    
+
+}
+
+.redes__boton:hover{
+    color: #694f3d;
+    /* color: rgba(218, 165, 32, 0.697); */
+    transition-property: all;
+    transition-duration: 150ms;
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+
+
 
 @media (min-width: 768px) {
 
@@ -434,6 +478,26 @@ a {
         align-items: center;
         height: 600px;
     }
+
+    .redes__tarjeta{
+        /* border: blue solid 3px; */
+        display: flex;
+        flex-direction: column;
+    
+        box-shadow: 0 0 10px;
+        border-radius: 15px;
+        
+        width: 300px;
+        
+    }
+
+    .redes__img {
+    
+        border-radius: 15px;
+        width: 100%;
+    
+    }
+
 
     .redes__title {
         text-align: center;
